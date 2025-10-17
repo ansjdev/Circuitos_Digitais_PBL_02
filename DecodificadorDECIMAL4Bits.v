@@ -31,7 +31,7 @@ module DecodificadorDECIMAL4Bits(
     and (is8, entrada[3], n2, n1, n0);
     and (is9, entrada[3], n2, n1, entrada[0]);
 
-    // ---------- SEGMENTOS ----------
+    // SEGMENTOS
     wire a_temp, b_temp, c_temp, d_temp, e_temp, f_temp, g_temp;
 
     or  (a_temp, is0, is2, is3, is5, is6, is7, is8, is9);
