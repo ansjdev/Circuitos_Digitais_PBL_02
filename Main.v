@@ -16,5 +16,6 @@ module Main(
         .Saida_out(Saida_out),  // Recebendo a saída de 8 bits
         .Flags_out(Flags_out)   // Recebendo as flags
     );
+	 
     
 endmodule
