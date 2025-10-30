@@ -140,21 +140,21 @@ module Multiplicador (A, B, P);
     );
 
     // Saída 
-    buf (P[0],  pp0[0]);
-    buf (P[1],  sum6[0]);
-    buf (P[2],  sum6[1]);
-    buf (P[3],  sum6[2]);
-    buf (P[4],  sum6[3]);
-    buf (P[5],  sum6[4]);
-    buf (P[6],  sum6[5]);
-    buf (P[7],  sum6[6]);
-    buf (P[8],  sum6[7]);
-    buf (P[9],  sum6[8]);
-    buf (P[10], sum6[9]);
-    buf (P[11], sum6[10]);
-    buf (P[12], sum6[11]);
-    buf (P[13], sum6[12]);
-    buf (P[14], sum6[13]);
-    buf (P[15], sum6[14]);
+    and (P[0],  pp0[0]);
+    and (P[1],  sum6[0]);
+    and (P[2],  sum6[1]);
+    and (P[3],  sum6[2]);
+    and (P[4],  sum6[3]);
+    and (P[5],  sum6[4]);
+    and (P[6],  sum6[5]);
+    and (P[7],  sum6[6]);
+    and (P[8],  sum6[7]);
+    and (P[9],  sum6[8]);
+    and (P[10], sum6[9]);
+    and (P[11], sum6[10]);
+    and (P[12], sum6[11]);
+    and (P[13], sum6[12]);
+    and (P[14], sum6[13]);
+    and (P[15], sum6[14]);
 
 endmodule
