@@ -1,4 +1,4 @@
-module Multiplicador (A, B, P);
+module Multiplicador4Bits(A, B, P);
     input [3:0] A, B;     // operandos de 4 bits
     output [7:0] P;       // produto de 8 bits
 

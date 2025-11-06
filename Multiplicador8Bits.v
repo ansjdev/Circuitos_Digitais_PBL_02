@@ -1,4 +1,4 @@
-module Multiplicador (A, B, P);
+module Multiplicador8Bits(A, B, P);
     input  [7:0] A, B;       // operandos de 8 bits
     output [15:0] P;         // produto de 16 bits
 
