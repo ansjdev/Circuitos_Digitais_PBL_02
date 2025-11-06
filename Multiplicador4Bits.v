@@ -28,7 +28,7 @@ module Multiplicador (A, B, P);
     and(pp3[3], A[3], B[3]);
 
     FullAdder add1 (
-        .A({3'b000, pp0}),         /
+        .A({3'b000, pp0}),         
         .B({2'b00, pp1, 1'b0}),    
         .Cin(1'b0),
         .S(sum1[3:0]),
