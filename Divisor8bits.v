@@ -149,7 +149,7 @@ module Divider8 (
     wire q0, q1, q2, q3, q4, q5, q6, q7;
 
     // resto inicial r0 = 0
-    // conecta r0 a zero usando buf (sem assign)
+    // conecta r0 a zero usando buf 
     buf b0_0(r0[0], 1'b0); buf b0_1(r0[1], 1'b0); buf b0_2(r0[2], 1'b0);
     buf b0_3(r0[3], 1'b0); buf b0_4(r0[4], 1'b0); buf b0_5(r0[5], 1'b0);
     buf b0_6(r0[6], 1'b0); buf b0_7(r0[7], 1'b0);
