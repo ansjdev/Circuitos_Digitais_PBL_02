@@ -95,14 +95,7 @@ module ContadorEstados(
     and (prox_10_01[0], reset_inv, transicao_10_01, sub_menos_um[0]);  
     and (prox_10_01[1], reset_inv, transicao_10_01, sub_menos_um[1]);  
     
-    // Caminho de Manutenção (CORREÇÃO 2: USA 'botao_pressed_negado')
-    // Ativo se (reset=0) E (NENHUM pulso de botão)
-    // Se o estado for '11', este caminho é ativado (pois transicao...=0),
-    // mas 'botao_pressed_negado'=1, e ele mantém '11'.
-    // SE o botão for pressionado em '11', 'botao_pressed_negado'=0,
-    // este caminho DESLIGA. Como todos os outros caminhos também
-    // estão desligados (pois estado_00/01/10=0), o MUX (OR)
-    // resulta em 00, recuperando o circuito.
+    // Verifica se mantém o estado ou volta pro estado inicial no caso de estar em 11 e o botão ser pressionado
     and (prox_mantem[0], reset_inv, botao_pressed_negado, estado_reg[0]);
     and (prox_mantem[1], reset_inv, botao_pressed_negado, estado_reg[1]);   
     
