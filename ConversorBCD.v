@@ -30,7 +30,7 @@ module ConversorBCD(
 
     or  (C[0], C[1], C[2]);
 
-    // ---------- DEZENA D[3:0] (exemplo estrutural simplificado) ----------
+    // ---------- DEZENA D[3:0] ----------
     wire tD0a, tD0b;
     xor (tD0a, Entrada[0], Entrada[4]);
     xor (tD0b, Entrada[1], Entrada[5]);
@@ -38,7 +38,7 @@ module ConversorBCD(
 
     // D[1..3] precisam de combinações lógicas semelhantes, usando tabela verdade
 
-    // ---------- UNIDADE U[3:0] (exemplo estrutural simplificado) ----------
+    // ---------- UNIDADE U[3:0] ----------
     wire tU0a, tU0b, tU0c;
     xor (tU0a, Entrada[0], Entrada[4]);
     xor (tU0b, Entrada[1], Entrada[5]);
